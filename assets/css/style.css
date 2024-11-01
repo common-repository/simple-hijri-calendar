@@ -1,0 +1,155 @@
+.ds .clear {
+    clear: both;
+    width: 100%;
+}
+
+.ds .clearfix {
+    *zoom: 1
+}
+
+.ds .clearfix:before, .ds .clearfix:after {
+    display: table;
+    content: "";
+}
+
+.ds .clearfix:after {
+    clear: both;
+}
+
+.ds .clearfix {
+    width: 100%;
+    clear: both;
+}
+
+.ds .hijri-calendar {
+    position: relative;
+    padding: 5%;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.3!important;
+    font-size: 100%!important;
+    background-color: #f3f3f3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: all 2.5s ease-in-out;
+    transition: all 2.5s ease-in-out;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.ds .date {
+    display: block;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .35);
+}
+
+.ds .date.alignleft {
+    text-align: left;
+}
+
+.ds .date.aligncenter {
+    text-align: center;
+}
+
+.ds .date.alignright {
+    text-align: right;
+}
+
+.ds .hijri {
+    direction: rtl;
+    unicode-bidi: embed;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ds .gregori {
+    font-family: 'Roboto';
+    font-size: .8em;
+}
+
+.ds .donate {
+    position: absolute;
+    top: 50%;
+    margin-top: -19px;
+    width: 38px;
+    height: 38px;
+    background: url('../img/tombol-donasi.png') center no-repeat;
+    border-radius: 500px;
+    opacity: .9;
+    -webkit-animation: flyingCloud 4s ease-in-out infinite;
+    -moz-animation: flyingCloud 4s ease-in-out infinite;
+    -o-animation: flyingCloud 4s ease-in-out infinite;
+    animation: flyingCloud 4s ease-in-out infinite;
+}
+
+.ds .donate:hover {
+    opacity: 1;
+}
+
+.ds .date.alignleft + .donate {
+    right: 1em;
+}
+
+.ds .date.alignright + .donate {
+    left: 1em;
+}
+
+.ds .pagi {
+    background-image: url('../img/pagi.png');
+}
+
+.ds .siang {
+    background-image: url('../img/siang.png');
+}
+
+.ds .sore {
+    background-image: url('../img/sore.png');
+}
+
+.ds .malam {
+    background-image: url('../img/malam.png');
+}
+
+.ds .screen-reader-text {
+    display: none;
+}
+
+
+/*BALLOON 1 4*/
+
+@-webkit-keyframes flyingCloud {
+    0%, 100% {
+        -webkit-transform: translateY(5px);
+    }
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+
+@-moz-keyframes flyingCloud {
+    0%, 100% {
+        -moz-transform: translateY(5px);
+    }
+    50% {
+        -moz-transform: translateY(-5px);
+    }
+}
+
+@-o-keyframes flyingCloud {
+    0%, 100% {
+        -o-transform: translateY(5px);
+    }
+    50% {
+        -o-transform: translateY(-5px);
+    }
+}
+
+@keyframes flyingCloud {
+    0%, 100% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
